@@ -30,21 +30,28 @@ html {
 }
 
 .polaroid:first-child {
-  top: 20%;
   left: 30%;
+  top: 20%;
+
   transform: rotate(-20deg);
 }
 
 .polaroid:nth-child(2) {
-  top: 30%;
+
   left: 40%;
+  top: 30%;
   transform: rotate(10deg);
   z-index: 3;
 }
 
 .polaroid:last-child {
-  top: 20%;
   left: 50%;
+  top: 20%;
   z-index: 1000;
   transform: rotate(30deg);
+}
+
+.polaroid:hover {
+  transform: rotate(0);
+  z-index: 1000;
 }
