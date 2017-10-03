@@ -4,13 +4,12 @@ html {
   font-family: sans-serif;
 }
 
-
 .polaroid {
   margin: 0;
   padding: 10px;
   width: 250px;
   position: absolute;
-  /*transition: all 500ms ease-in-out;*/
+  transition: all 250ms linear;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
@@ -32,12 +31,11 @@ html {
 .polaroid:first-child {
   left: 30%;
   top: 20%;
-
+  z-index: 1;
   transform: rotate(-20deg);
 }
 
 .polaroid:nth-child(2) {
-
   left: 40%;
   top: 30%;
   transform: rotate(10deg);
@@ -47,11 +45,12 @@ html {
 .polaroid:last-child {
   left: 50%;
   top: 20%;
-  z-index: 1000;
+  z-index: 2;
   transform: rotate(30deg);
 }
 
 .polaroid:hover {
   transform: rotate(0);
   z-index: 1000;
+  box-shadow: 4px 7px 8px rgba(0, 0, 0, .5);
 }
